@@ -1,0 +1,29 @@
+body {
+    background-color:mintcream; font-size: 20px; font-family: 'Times New Roman', Times, serif; margin: 30px;
+
+
+    /*note to self... margain will create external space around element*/
+}
+
+p {
+    background-color: mistyrose;    
+
+    border:dashed 2px blueviolet;
+
+    padding:20px;
+    /*internal spacing inside borders*/
+}
+
+a {
+    color:seagreen;
+}
+
+.void {
+
+border:dotted 10px;
+
+background-color: lightgreen;
+
+text-align:center;
+
+}
