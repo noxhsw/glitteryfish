@@ -1,0 +1,2 @@
+# glitteryfish
+*
