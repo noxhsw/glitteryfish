@@ -5,7 +5,13 @@
 body{
 background-color:lightblue;
 
+background: url('glitter.JPG') center fixed; background-size: contain;
 }
+
+p{
+    background-color:dodgerblue; color: aliceblue;
+}
+
 
 /*h1{
 text-color:whitesmoke;
