@@ -9,7 +9,8 @@ background: url('glitter.JPG') center fixed; background-size: contain;
 }
 
 p{
-    background-color:dodgerblue; color: aliceblue;
+    /*background-color:dodgerblue;*/ color: aliceblue;
+    background-image: radial-gradient(circle, rgb(72, 127, 181) 10%, rgb(73, 138, 73) 40%, lightblue);
 }
 
 
