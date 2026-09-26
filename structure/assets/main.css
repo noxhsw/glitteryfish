@@ -1,0 +1,96 @@
+
+body{
+    background-color: black;
+    margin: 20px;
+}
+
+h2{
+    background-color: lightpink;
+    font-style: italic;
+    font-family:cursive;
+}
+
+h3{
+    background-color: lightpink;
+    font-style: italic;
+    font-family:cursive; 
+}
+
+.bedroom{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    gap: 5px 5px;
+}
+
+.wardrobe{
+    display: flex;
+    background-color:darkviolet;
+    width: 20%;
+    height: 100%;
+}
+
+.not-wardrobe{ 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    gap: 5px 5px;
+}
+
+.walls{
+    background-color: white;
+    height: 60%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px 5px;
+}
+
+.emptywall{
+    background-color:rosybrown;
+}
+
+.window{
+    background-color: saddlebrown;
+}
+
+.poster{
+    background-color:blueviolet;
+}
+
+.floor{
+    background-color: peru;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    }
+
+.desk-rug{
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+.emptyfloor{
+    background-color: aquamarine;
+}
+
+.bed{
+    background-color: hotpink;
+}
+
+
+
+
+
+
+/* <div class="bed">
+            <img src="assets/bed.jpg"></div>
+
+        <div class="wardrobe">
+            <img src="assets/wardrobe.jpg"></div>*/

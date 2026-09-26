@@ -1,0 +1,138 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+img{
+    max-width: 100%;
+}
+
+.box{
+    background-color: rgb(225, 178, 222);
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    margin: 20px 0;
+}
+
+/*top, right, bottom, left*/
+
+.relative{
+      background-color: rgb(178, 208, 225);
+      position:relative;
+      bottom: 100px;
+      left: 20px;
+
+}
+
+.fixed{
+background-color: rgb(163, 109, 220);
+position:fixed;
+top:0;
+right:0;
+margin:0;
+}
+/*when multiple fixed, html altta olan will be on top, or you can add a z-index: the bigger it gets it becomes on top*/
+
+.sticky{
+    background-color: rgb(178, 229, 199);
+    position: sticky;
+    top:0;
+}
+
+.absolute{
+    background-color: rgb(241, 199, 109);  
+    position:absolute;
+    top:400px;
+    left:200px;
+}
+/*doesnt leave a lingering empty space, acts by itself*/
+
+.parent{
+    background-color: dimgrey;
+    width: 300px;
+    height: 300px;
+    position:relative
+}
+
+/*absolutely positioned element will position themselves in relation to the document body unless they have a parent/container that has also been given a position value*/
+
+.child{
+    background-color: rgb(237, 106, 106);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: -100px;
+    right: -100px;
+}
+
+.smiley{
+    background-color: rgb(34, 56, 54);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.eye{
+    background-color: mediumslateblue;
+    width: 30px;
+    height: 30px;
+    border: 5px solid white;
+    position:absolute;
+    top:50px;  
+    border-radius:0 0 100% 100%;
+    
+}
+
+.left{
+   left: 30px;
+}
+
+.right{ 
+   right:30px;
+}
+
+.mouth{
+   background-color: mediumslateblue;
+    width: 30px;
+    height: 30px;
+    position:absolute; 
+    border-radius: 5px;
+}
+
+.one{
+    bottom: 50px;
+    left:30px;
+}
+
+.two{
+    bottom: 30px;
+    left:55px;
+}
+
+.three{
+    bottom: 30px;
+    left:85px;
+
+}
+
+.four{
+    bottom: 30px;
+    left:115px;
+}
+
+.five{
+    bottom: 50px;
+    right: 30px;
+}
+
+.hat{
+    background-color: darkseagreen;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left:90px;
+}
