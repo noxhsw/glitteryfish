@@ -20,21 +20,33 @@ h3{
     display: flex;
     flex-direction: row;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     gap: 5px 5px;
+}
+
+.bedroom a {
+    height: 100%;
+    width: 30%;
 }
 
 .wardrobe{
     display: flex;
-    background-color:darkviolet;
-    width: 20%;
+    width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.wardrobe img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .not-wardrobe{ 
+    background-color: white;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
     height: 100%;
     gap: 5px 5px;
 }
@@ -49,16 +61,32 @@ h3{
     gap: 5px 5px;
 }
 
-.emptywall{
+/*.emptywall{
     background-color:rosybrown;
-}
+}*/
 
 .window{
     background-color: saddlebrown;
+    width: 50%;
+    height: 70%;
+}
+
+.window img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .poster{
-    background-color:blueviolet;
+    display: flex;
+    width: 30%;
+    height: 80%;
+}
+
+.poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .floor{
@@ -66,22 +94,53 @@ h3{
     height: 60%;
     display: flex;
     justify-content: space-around;
+
     }
 
 .desk-rug{
-    background-color: chartreuse;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: baseline;
-    
+    justify-content: center;
+    align-items: baseline;  
 }
+
+.desk{
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+
+.desk img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.rug{
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+
+.rug img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 .emptyfloor{
-    background-color: aquamarine;
+    background-color: peru
 }
 
 .bed{
-    background-color: hotpink;
+    width: 100%;
+    height: 100%; 
+}
+
+.bed img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 
