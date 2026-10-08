@@ -1,0 +1,54 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+img{
+    max-width: 100%;
+}
+
+/*margin: 20px 100px 50px 10px;
+/*top, right, bottom, left*/
+
+body{
+    margin: 0;
+    height: 100vh;
+    background: black;
+}
+
+.scrolling{
+    display: flex;
+    text-align: center;
+    animation: up 15 infinite ease-in-out;
+
+
+}
+
+.hate{
+    font-size: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px tomato,
+    0 0 82px tomato;
+
+
+}  
+
+@keyframes up{
+
+    0%{
+        top: 100%;
+
+    }
+
+    100%{
+
+        top: -100%;
+    }
+
+}

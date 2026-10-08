@@ -1,0 +1,45 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+/*img{
+    max-width: 100%;
+}*/
+
+/*margin: 20px 100px 50px 10px;
+/*top, right, bottom, left*/
+
+body{
+
+    background:rgb(161, 153, 209)
+
+}
+
+p{ 
+    color: antiquewhite;
+}
+
+
+.container{
+    background: rgb(72, 102, 146);
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.poem{
+
+    color: antiquewhite;
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fih{
+    height: 250px;
+    width: 250px;
+}
+
