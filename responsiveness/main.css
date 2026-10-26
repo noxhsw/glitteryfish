@@ -1,0 +1,52 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background: whitesmoke;
+    color: rgb(147, 147, 147);
+    transition: background 1s;
+}
+
+/*margin: 20px 100px 50px 10px;
+/*top, right, bottom, left*/
+
+.responsive{
+    background:darkslateblue;
+    padding: 20px;
+    max-width: 700px;
+    transition: background 1s;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background: rgb(174, 38, 61);
+        color: antiquewhite;
+    }
+    
+    .responsive{
+        background: rgb(110, 59, 78);
+        padding: 50px;
+        border: 5px solid;
+    }
+}
+
+/*start larger go smaller in media pxs*/
+
+@media screen and (max-width: 600px) {
+    body{
+        background: black;
+        color: rgb(99, 25, 25);
+    }
+    .responsive{
+        background: darkgrey;
+    }
+
+
+}
