@@ -32,12 +32,13 @@ img{
 
 .container.dark{
 
-    background: black;
+    background: rgb(59, 39, 20);
 }
 
 .draggable{
     position: absolute;
     cursor: grab;
+    will-change: transform, top, left
 }
 
 .draggable.dark{

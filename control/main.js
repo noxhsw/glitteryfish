@@ -2,11 +2,16 @@
     function(){
         $(".container").toggleClass("dark");
 
-         $(".draggable").toggleClass("dark");
+        $(".draggable").toggleClass("dark");
 
-         $(".word-btn").hide();
+        $(".word-btn").hide();
 
         $(".unword-btn").show(); 
+
+        $(".draggable").css({
+            top: "",
+            left: ""})
+
     }
 
 );
