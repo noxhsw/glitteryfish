@@ -30,16 +30,17 @@ $(".unword-btn").click(function(){
 
 });
 
+
 $(function() {
-    $( ".draggable" ).draggable({
-        containment: ".container"
+    $(".draggable").draggable({
+        containment: ".container",
+        stack: ".draggable"
     });
 });
 
 $(function() {
-    $( ".card" ).draggable({
-        
+    $(".card").draggable({
+        stack: ".card"
     });
 });
-
 
