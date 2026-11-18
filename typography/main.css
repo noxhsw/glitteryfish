@@ -1,0 +1,36 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Kode+Mono:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'Coral Pixels';
+    src: url('CoralPixels-Regular.woff2') format('woff2'),
+        url('CoralPixels-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-family: "Coral Pixels", serif;
+}
+
+body{
+
+    font-family: "Doto", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+/*margin: 20px 100px 50px 10px;
+/*top, right, bottom, left*/
