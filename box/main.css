@@ -1,0 +1,78 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: rgb(255, 171, 185);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+
+    width: 40vw;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    background-color: rgb(174, 41, 123);
+    
+}
+
+.container.shimmer{
+    border: 15px solid transparent;
+    border-image-source: url("images/Sparkly\ GIF.gif");
+    border-image-slice: 10;
+    border-image-repeat: round;
+
+}
+
+.draggable {
+  position: absolute;
+  cursor: grab;
+  width: auto;
+}
+
+.head  { top: 5%; left: -40%; z-index: 4; }
+.torso { top: 10%; left: 105%; z-index: 3; }
+.arm1  { top: 60%; left: 110%; z-index: 2; }
+.arm2  { top: 20%; left: -60%; z-index: 2;}
+.leg1  { top: 45%; left: -25%; z-index: 1; }
+.leg2  { top: 20%; left: 140%; z-index: 1; } 
+
+
+.text{
+    color: rgb(255, 255, 255); 
+    position: relative;
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    }
+
+.shine{
+
+    background-image: url("images/Sparkly\ GIF.gif");
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
