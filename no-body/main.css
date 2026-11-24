@@ -4,11 +4,19 @@
 }
 */
 
+:root { 
+  --ink: rgb(255, 255, 255); 
+  --ink-2: #FF4FD8; 
+  --ink-3: rgb(122, 47, 172);
+  }
+
+
 img{
     max-width: 100%;
 }
 
 body{
+    background-color: #FF4FD8;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -24,28 +32,50 @@ body{
 
 .container{
 
-    width: 500px;
-    height: 500px;
+    width: 40vw;
+    aspect-ratio: 1 / 1;
     position: relative;
-    background-color: pink;
+    background-color: rgb(255, 171, 185);
     
 }
 
 .draggable {
   position: absolute;
   cursor: grab;
+  width: auto;
 }
 
-.head  { top: 10%; left: 5%; z-index: 3; }
-.torso { top: 60%; left: 25%; z-index: 2; }
-.arm1  { top: 45%; left: 10%; z-index: 1; }
-.arm2  { top: 5%; left: 30%; z-index: 1;}
-.leg1  { top: 10%; left: 50%; z-index: 1; }
-.leg2  { top: 20%; left: 80%; z-index: 1; } 
+.head  { top: 5%; left: -40%; z-index: 4; }
+.torso { top: 10%; left: 105%; z-index: 3; }
+.arm1  { top: 60%; left: 110%; z-index: 2; }
+.arm2  { top: 20%; left: -60%; z-index: 2;}
+.leg1  { top: 45%; left: -20%; z-index: 1; }
+.leg2  { top: 20%; left: 140%; z-index: 1; } 
 
 
 .text{
-    color: blue;
+    color: rgb(122, 47, 172);
     position: relative;
-    font-size: large;
+    font: 600 26px/1.2 monospace;
+    text-align: center;
 }
+
+.shine{
+    display: inline-block;
+    font: 600 26px/1.2 monospace;
+    letter-spacing: .08em;
+    background: radial-gradient(3.5ch 100% at 50% 50%,
+        var(--ink-3) 0%,
+        var(--ink-2) 35%,
+        var(--ink) 75%
+        ) 0 0 / 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 5s ease-in-out infinite alternate;
+    }
+@keyframes shine {
+  0%   { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+} 
+
