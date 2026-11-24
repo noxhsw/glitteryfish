@@ -62,9 +62,9 @@ $(function () {
 
         const newContent = $(`
           <div class="text" id="bones" style="display: none;">
-            <p> <br> this is the only way i can fit in the box...</p>
+            <p> <br> this is the only way i can fit in a box...</p>
             <img src="../images/skeletonbg.png"> <br>
-            <a href="../index.html">i want to look at flesh or skin</a>
+            <a href="../index.html">i want to look at FLESH or SKIN</a>
           </div>
         `);
 
