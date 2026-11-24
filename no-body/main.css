@@ -49,7 +49,7 @@ body{
 .torso { top: 10%; left: 105%; z-index: 3; }
 .arm1  { top: 60%; left: 110%; z-index: 2; }
 .arm2  { top: 20%; left: -60%; z-index: 2;}
-.leg1  { top: 45%; left: -20%; z-index: 1; }
+.leg1  { top: 45%; left: -25%; z-index: 1; }
 .leg2  { top: 20%; left: 140%; z-index: 1; } 
 
 
