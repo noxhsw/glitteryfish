@@ -27,7 +27,7 @@ body{
 
 .container{
 
-    width: 40vw;
+    width: 35vw;
     aspect-ratio: 1 / 1;
     position: relative;
     background-color: rgb(174, 41, 123);
