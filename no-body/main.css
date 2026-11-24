@@ -1,0 +1,51 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: pink;
+    
+}
+
+.draggable {
+  position: absolute;
+  cursor: grab;
+}
+
+.head  { top: 10%; left: 5%; z-index: 3; }
+.torso { top: 60%; left: 25%; z-index: 2; }
+.arm1  { top: 45%; left: 10%; z-index: 1; }
+.arm2  { top: 5%; left: 30%; z-index: 1;}
+.leg1  { top: 10%; left: 50%; z-index: 1; }
+.leg2  { top: 20%; left: 80%; z-index: 1; } 
+
+
+.text{
+    color: blue;
+    position: relative;
+    font-size: large;
+}
