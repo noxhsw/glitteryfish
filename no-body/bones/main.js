@@ -1,7 +1,7 @@
 $(function () {
   const scale = 0.25;
 
- $("#bottomtext").css({
+ $("#bottomtext, #remove-btn").css({
     visibility: "hidden",
     opacity: 0
   });
@@ -42,10 +42,34 @@ $(function () {
       });
 
       if (allInside) {
-        $("#bottomtext")
+        $("#bottomtext, #remove-btn")
           .css("visibility", "visible")
           .animate({ opacity: 1 }, 1000);
       }
     }
+  });
+
+  $("#remove-btn").on("click", function () {
+    $("body")
+      .children()
+      .not("script")
+      .fadeOut(400)
+      .promise()
+      .done(function () {
+        $(this).remove();
+
+        $("body").css("background-color", "black");
+
+        const newContent = $(`
+          <div class="text" id="bones" style="display: none;">
+            <p> <br> this is the only way i can fit in the box...</p>
+            <img src="../images/skeletonbg.png"> <br>
+            <a href="../index.html">i want to look at flesh or skin</a>
+          </div>
+        `);
+
+        $("body").prepend(newContent);
+        newContent.fadeIn(600);
+      });
   });
 });
