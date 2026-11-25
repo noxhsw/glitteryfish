@@ -28,6 +28,8 @@ body{
 .container{
 
     width: 35vw;
+    max-width: 450px;
+    max-height: 60vh;
     aspect-ratio: 1 / 1;
     position: relative;
     background-color: rgb(174, 41, 123);

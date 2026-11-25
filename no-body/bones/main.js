@@ -1,4 +1,5 @@
 $(function () {
+  const referenceBoxSize = 450;
   const scale = 0.25;
 
  $("#bottomtext, #remove-btn").css({
@@ -9,8 +10,7 @@ $(function () {
 
   $(".draggable").each(function () {
     $(this).on("load", function () {
-      const containerWidth = $(".container").width();
-      const percentWidth = ((this.naturalWidth * scale) / containerWidth) * 100;
+     const percentWidth = ((this.naturalWidth * scale) / referenceBoxSize) * 100;
 
       $(this).css({
         width: percentWidth + "%",
