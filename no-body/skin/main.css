@@ -4,9 +4,25 @@
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
 img{
     max-width: 100%;
 }
+    
+body{
+    height: 100vh;
+    background-image: url("../images/texture.png");
+    background-size: 40vh; 
+    background-repeat: repeat;
+    margin: 0;
+    }
 
-/*margin: 20px 100px 50px 10px;
-/*top, right, bottom, left*/
+.entry{
+    color: antiquewhite;
+    text-align: start;
+    margin: 50px;
+    font-family: "Eagle Lake", serif;
+    font-size: 20px;
+    
+}
