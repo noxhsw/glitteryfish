@@ -20,15 +20,52 @@
 <body>
 
 
+    <div class="maincontainer">
+
+        <img src="../images/nontatarm.png">
+
+        <img src="../images/bbody.png" class="pix">
+
+        <img src="../images/tatarm.png">
+
+    </div>
 
 
+     <div class="cutme">cut me open!</div>
+
+    <div id="final" class="final">
+        <p>See, we've won again,<br> here we are at the place where I get to beg for it, where i get to say <i>Please, for just one night, will you lie down next to me, we can leave our clothes on, <br>we can stay all buttoned up.</i><br> But we both know how it goes--I say <i> I want you inside me</i> and you hold my head underwater, I say <i> I want you inside me</i> and you split me open<br>with a knife.</p>
+        <a href="../index.html" class="final-link">i want to look at BONES or SKIN</a>
+    </div>
+    
 
 
 <script src="jquery-4.0.0.min.js"></script>
 
 <script src="jquery-ui.min.js"></script>
 
-<script src="main.js"></script>
+
+<script>
+
+  let clickStep = 0;
+
+  document.querySelector(".cutme").addEventListener("click", function() {
+    clickStep++;
+
+    if (clickStep === 1) {
+      document.querySelector(".pix").src = "../images/meat.jpg";
+      this.textContent = "more!";
+      this.style.color = "white";
+    } else if (clickStep === 2) {
+      document.getElementById("final").classList.add("fade-in");
+      
+      setTimeout(() => {
+        document.querySelector(".maincontainer").style.display = "none";
+        this.style.display = "none";
+      }, 2000);
+    }
+  });
+</script>
 
 </body>
 

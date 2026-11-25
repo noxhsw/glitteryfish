@@ -4,9 +4,121 @@
 }
 */
 
-img{
-    max-width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: "Almendra", serif;
 }
 
-/*margin: 20px 100px 50px 10px;
-/*top, right, bottom, left*/
+body{
+    background-color: black;
+    background-image: url("../images/pxmeat.png");
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.maincontainer img {
+    flex: 1 1 0;     
+    min-width: 0;    
+    min-height: 0;
+    height: 100%;
+    object-fit: fill;
+}
+
+.maincontainer img.pix{
+    flex: 5 1 0; 
+}
+
+.pix:hover {
+  cursor: url("../images/knife.png"), pointer;
+}
+
+.pix:active {
+   cursor: url("../images/knife2.png"), pointer; 
+}
+
+.cutme {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: crimson;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+  
+
+.cutme:hover {
+  cursor: url("../images/knife.png"), pointer;
+}
+
+.cutme:active {
+   cursor: url("../images/knife2.png"), pointer; 
+}
+
+
+.final {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vh;
+  background-color: black;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  font-size: 40px;
+  padding: 10px 10px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+}
+
+.final.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.final-link {
+
+position: absolute;
+bottom: 25px;
+right: 25px;
+
+color: crimson;
+font-size: 20px;
+border: 2px solid antiquewhite;
+padding: 10px 10px;
+transition: color 0.2s ease;
+}
+  
