@@ -52,7 +52,9 @@ body{
 .final-link {
     display: block;
     text-align: right;
-    margin: 40px 25px 25px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     color: rgb(79, 35, 20);
     font-size: 20px;
     transition: color 0.2s ease;
@@ -66,3 +68,20 @@ body{
     font-size: 20px;
 }
 
+summary {
+  list-style: none; 
+  cursor: pointer;  
+}
+
+summary::-webkit-details-marker {
+  display: none;  
+}
+
+summary::before {
+  content: "✩ "; 
+  font-weight: bold;
+}
+
+details[open] summary::before {
+  content: "✮ ";
+}
