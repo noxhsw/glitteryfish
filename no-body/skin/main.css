@@ -26,3 +26,43 @@ body{
     font-size: 20px;
     
 }
+
+.entry img{
+    
+    display: block;
+    margin: 10px auto;
+}
+
+.bot-text{
+    
+    font-size: 15px;
+    text-align: center;
+    color: rgb(79, 35, 20);
+    text-decoration: underline;
+}
+
+.bot-text:hover {
+  cursor:grabbing;
+}
+
+.writing{
+    display: none;
+}
+
+.final-link {
+    display: block;
+    text-align: right;
+    margin: 40px 25px 25px 0;
+    color: rgb(79, 35, 20);
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+.allwriting{
+    color: antiquewhite;
+    text-align: start;
+    margin: 50px;
+    font-family: "Eagle Lake", serif;
+    font-size: 20px;
+}
+
